@@ -7,10 +7,11 @@
   &__nav {
     position: absolute;
     bottom: 8%;
+    left: 7.5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 80vw;
+    width: 86vw;
   }
   &__link {
     font-family: "Got";
@@ -19,7 +20,7 @@
     font-size: 32px;
     transition: all 0.3s ease-in-out;
     &:hover {
-      color: rgb(95, 93, 93);
+      color: rgb(114, 112, 112);
     }
   }
 }
