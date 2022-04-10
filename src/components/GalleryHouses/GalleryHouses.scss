@@ -11,7 +11,7 @@
 
 
 .c-houses {
-  margin: 10vh 40px;
+  margin: 10vh 0px 0px 50px;
   height: 75vh;
   overflow-x: hidden;
   &__link {
@@ -38,7 +38,6 @@
 
 @media only screen and (max-device-width: 1000px) {
   .c-houses {
-   margin-left: 64px;
     width: 80vw;    
     height: 72vh;
   }
