@@ -1,0 +1,69 @@
+.c-detail{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    width: 100vw;
+    margin-top: 4%;
+}
+
+.c-house-detail{
+    margin: 8rem;
+    height: 16vh;   
+    
+    &__bottom{
+        width: 90vw;
+    }
+    
+    &__img{
+        width: 14rem;
+        height: 17rem;
+        
+    }
+
+    &__name{
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    &__logo{
+        margin: 20px 0px;
+        width:160px ;
+        height: 200px;        
+    }
+
+    &__text{        
+        font-family: 'Lato';
+     
+    }
+    &__goBack{
+        display: flex;
+        position: absolute;
+        font-family:Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        font-size: 24px;
+        gap: 2vw;
+        top: 4vh;
+        left: 10vw;
+    }
+
+    &__link{
+        
+        color: var(--white);
+    }
+    
+}
+
+
+@media only screen and (max-device-width: 1200px) {
+
+   
+
+    .c-house-detail__goBack{
+        font-size: 18px;
+        padding-bottom: 20px ;
+        &-arrow{
+            width: 24px;
+        }
+    }
+
+}

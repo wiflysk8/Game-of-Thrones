@@ -1,0 +1,22 @@
+.c-home__btn {
+  position: absolute;
+  top: 2.5rem;
+  right: 16em;
+  img {
+    width: 85%;
+    height: 85%;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-device-width: 1000px) {
+  .c-home__btn {
+    position: absolute;
+    top: 2rem;
+    right: 6em;
+    img {
+      width: 48%;
+      cursor: pointer;
+    }
+  }
+}

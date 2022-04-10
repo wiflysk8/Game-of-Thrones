@@ -1,0 +1,32 @@
+.c-translator-nav{
+    position: absolute;
+    display: flex;
+    top: 2rem;
+    right: 6rem;
+    gap: 10px;
+}
+
+
+.c-flag-icon{
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-device-width: 1000px) {
+    .c-translator-nav{
+        position: absolute;
+        display: flex;
+        top: 2rem;
+        right: 2rem;
+        gap: 10px;
+    }
+    
+    
+    .c-flag-icon{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+  }

@@ -1,0 +1,25 @@
+.c-home{
+    background-image: url('../../assets/images/throne.svg');
+    height: 100vh;    
+    width: 100vw;
+    background-size: cover;
+    &__title{
+        text-align: center;
+        display: block; 
+        position: absolute;
+        top: 18vh; 
+        font-family: 'Got';
+        color: var(--color-white);
+        font-size: 9vw;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 1800px) {
+    .c-home{
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+
+    }
+}

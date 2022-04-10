@@ -1,0 +1,50 @@
+.c-characters::-webkit-scrollbar {
+  width: 2px;
+  background-color: #443d3d;
+  
+}
+
+.c-characters::-webkit-scrollbar-thumb {
+  width: 2px;
+  height: 91.3px;
+  background-color: white;
+}
+
+.c-characters {
+  margin: 50px 10px;
+  height: 83vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  &__link {
+    text-decoration: none;
+  }
+  &__figure {
+    cursor: pointer;
+    height: 340px;
+    width: 260px;
+    margin: 10px 0px;
+    &:hover {
+      .c-characters__figure__name {
+        color: var(--color-white);
+        background-color: rgba(0, 0, 0, 0.589);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    &__img {
+      width: 90%;
+      height: 90%;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.253);
+    }
+    &__name {
+      position: relative;
+      width: auto;
+      font-family: "GOT";
+      padding: 3.5vh;
+      bottom: 30%;
+      font-size: 2vh;
+      color: transparent;
+    }
+  }
+}

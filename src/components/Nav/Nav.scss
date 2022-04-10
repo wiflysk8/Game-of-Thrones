@@ -1,0 +1,43 @@
+.c-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__nav {
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+  }
+  &__link {
+    font-family: "Got";
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 32px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: rgb(95, 93, 93);
+    }
+  }
+}
+
+@media only screen and (max-device-width: 600px) {
+  .c-menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 3vh;
+
+    &__nav{
+      justify-content: space-evenly;
+    }
+    &__link{
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.c-loading{
+    position: relative;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    &__gif{
+        margin-bottom:10vh;
+        width: 300px;
+        height: 200px;
+    }
+    
+}
