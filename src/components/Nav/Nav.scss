@@ -43,3 +43,22 @@
     }
   }
 }
+
+@media only screen and (max-device-width: 1700px) {
+  .c-menu{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 6vh;
+
+    &__nav{
+      justify-content: space-evenly;
+    }
+    &__link{
+      font-size: 24px;
+    }
+  }
+}
