@@ -11,6 +11,7 @@
         font-family: 'Got';
         color: var(--color-white);
         font-size: 9vw;
+        font-weight: lighter;
         width: 100%;
     }
 }
@@ -18,8 +19,7 @@
 @media only screen and (max-device-width: 1800px) {
     .c-home{    
     background-position: center;
- 
+    background-size: cover; 
     max-height: 100vh;
-
     }
 }

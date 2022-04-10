@@ -11,10 +11,16 @@
 }
 
 .c-characters {
-  margin: 50px 10px;
+  margin: 50px 0px 0px 20px;
   height: 83vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
+
+  &__gallery{
+    display: flex ;
+
+    background-color: red;
+  }
 
   &__link {
     text-decoration: none;
@@ -60,6 +66,6 @@
   }
 
   .c-characters {
-    margin-left: 24px;
+    margin-left: 22px;
   }
 }

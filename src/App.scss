@@ -5,8 +5,6 @@ html, body {
   color: var(--color-white);
   font-family: 'GOT';
   margin: 0px;
-  width: 100vw;
-  height:86vh ;
   min-width: 375px;
   scroll-behavior: smooth;
 }
@@ -56,5 +54,14 @@ html, body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+
+@media only screen and (max-device-width: 1800px) {
+  body{    
+  width: 90vw;
+  margin: 0px;
   }
 }
