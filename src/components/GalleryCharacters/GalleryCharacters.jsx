@@ -18,7 +18,7 @@ const GalleryCharacters = ({ data }) => {
                   src={character.image}
                   alt={character.name}
                 />
-                <p className="c-characters__figure__name">{character.name}</p>
+                <div className="c-characters__figure__name">{character.name}</div>
               </figure>
             </Link>
           </div>
