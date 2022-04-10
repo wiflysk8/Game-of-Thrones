@@ -14,6 +14,14 @@
   margin: 10vh 0px 0px 50px;
   height: 75vh;
   overflow-x: hidden;
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: green;
+    margin-left: 5vw;
+    width: 90%;
+  }
   &__link {
     text-decoration: none;
     color: white;

@@ -5,6 +5,7 @@ import "./GalleryHouses.scss";
 const DetailHouse = ({ houses }) => {
   return (
     <section className="c-houses">
+    <div className="c-houses__container">
     <div className="row">
       {houses.map(
         (house) =>
@@ -26,6 +27,7 @@ const DetailHouse = ({ houses }) => {
             </div>
           )
       )}
+    </div>
     </div>
     </section>
   );
