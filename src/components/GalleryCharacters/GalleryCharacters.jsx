@@ -5,9 +5,10 @@ import { Link, generatePath } from "react-router-dom";
 const GalleryCharacters = ({ data }) => {
   return (
     <section className="c-characters">
+    <div className="c-characters-container">
       <div className="row">
         {data.map((character) => (
-          <div className="col-12 col-md-6 col-lg-2" key={character.id}>
+          <div className="col-12 col-md-5 col-lg-2" key={character.id}>
             <Link
               className="c-characters__link"
               to={generatePath("/characters/:name", { name: character.name })}
@@ -23,6 +24,7 @@ const GalleryCharacters = ({ data }) => {
             </Link>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
