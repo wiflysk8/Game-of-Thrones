@@ -12,7 +12,7 @@
 
 .c-characters {
   margin: 50px 10px 0px 20px ;
-  height: 83vh;
+  height: 77vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
 
@@ -23,7 +23,7 @@
     cursor: pointer;
     height: 340px;
     width: 260px;
-    margin: 10px 0px;
+    margin: 0px;
     &:hover {
       .c-characters__figure__name {
         color: var(--color-white);
@@ -57,5 +57,9 @@
 
   }
 
+  .c-characters__figure__name{
+      bottom: 28%;
+
+  }
 
 }
