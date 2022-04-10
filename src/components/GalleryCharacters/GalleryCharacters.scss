@@ -11,34 +11,24 @@
 }
 
 .c-characters {
-  margin: 50px 0px 0px 20px;
+  margin: 50px 10px 0px 20px ;
   height: 83vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
-
-  &__gallery{
-    display: flex ;
-
-    background-color: red;
-  }
 
   &__link {
     text-decoration: none;
   }
   &__figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     cursor: pointer;
     height: 340px;
     width: 260px;
     margin: 10px 0px;
-    overflow: hidden;
     &:hover {
       .c-characters__figure__name {
         color: var(--color-white);
-        background-color: rgba(0, 0, 0, 0.548);
-        transition: all 0.3s ease-in-out;        
+        background-color: rgba(0, 0, 0, 0.589);
+        transition: all 0.3s ease-in-out;
       }
     }
     &__img {
@@ -49,24 +39,23 @@
     }
     &__name {
       position: relative;
+      width: auto;
       font-family: "GOT";
-      width: 65%;
-      padding: 13%;
-      bottom: 11vh;
-      font-size: 1.8vh;
+      padding: 3.5vh;
+      bottom: 30%;
+      font-size: 2vh;
       color: transparent;
     }
   }
 }
 
 
-@media only screen and (max-device-width: 1000px) {
-  .c-characters__figure__name {
-    width: 100%;    
+@media only screen and (max-device-width: 1200px) {
+
+  .c-characters{
+      height: 77vh;
+
   }
 
-  .c-characters {
-    margin-left: 22px;
-    height: 77vh;
-  }
+
 }
