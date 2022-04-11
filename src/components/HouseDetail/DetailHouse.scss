@@ -57,11 +57,12 @@
   }
 }
 
-@media only screen and (max-device-width: 1200px) {
-  .c-house-detail__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+@media only screen and (max-device-width: 900px) {
+  .c-detail1 .c-house-detail__goBack {
+    font-size: 18px;
+    top: 2vh;
+    &-arrow {
+      width: 24px;
+    }
   }
 }

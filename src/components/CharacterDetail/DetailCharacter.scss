@@ -75,7 +75,7 @@
   }
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media only screen and (max-device-width: 900px) {
   .c-character-detail__img {
     width: 100%;
     max-width: 200px;
@@ -84,6 +84,7 @@
 
   .c-character-detail__goBack {
     font-size: 18px;
+    top: 2vh;
     &-arrow {
       width: 24px;
     }

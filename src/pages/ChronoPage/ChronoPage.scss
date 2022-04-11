@@ -39,8 +39,8 @@
     bottom: 2rem;
     &-inverted {
       position: relative;
-    left: 1.7%;
-    bottom: 2rem;
+      left: 1.7%;
+      bottom: 2rem;
       transform: rotate(180deg);
     }
   }
@@ -62,9 +62,12 @@
 }
 
 .box-left {
+  display: flex;
   width: 20vw;
   height: 26vh;
   border-top: 2px solid var(--color-white);
+  flex-direction: column;
+  align-items: center;
   &__img {
     width: 40%;
     height: 50%;
@@ -78,9 +81,12 @@
 }
 
 .box-right {
+  display: flex;
   width: 20vw;
   height: 26vh;
   border-top: 2px solid var(--color-white);
+  flex-direction: column;
+  align-items: center;
 
   &__img {
     width: 40%;
@@ -94,51 +100,48 @@
   }
 }
 
-
 @media only screen and (max-device-width: 1800px) {
-  .box-left{
+  .box-left {
     margin-right: 0px;
     font-size: 14px;
     width: 34vw;
-    &__img{
+    &__img {
       width: 80px;
       height: 80px;
-      
     }
   }
 
-  .box-right{
+  .box-right {
     font-size: 14px;
     width: 34vw;
-    &__img{
+    &__img {
       width: 80px;
       height: 80px;
-      
     }
   }
 
-  .c-chrono{
+  .c-chrono {
     margin-top: 80px;
     height: 67vh;
-    &__right{
-      margin-top:200px;
+    &__right {
+      margin-top: 200px;
     }
   }
-  .c-chrono__btn{
+  .c-chrono__btn {
     left: 24px;
     top: -2.7rem;
   }
 
-  .c-chrono__arrow{
+  .c-chrono__arrow {
     left: 16px;
     top: -1rem;
-    &-inverted{
+    &-inverted {
       left: 16px;
-    top: -1rem;
+      top: -1rem;
     }
   }
 
-  .c-chrono-page{
+  .c-chrono-page {
     margin-top: 40px;
   }
 }
