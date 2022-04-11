@@ -12,7 +12,7 @@
 .c-houses {
   position: absolute;
   flex-wrap: wrap;
-  top: 10%;
+  top: 12vh;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -43,9 +43,11 @@
   }
 }
 
-@media only screen and (max-device-width: 1000px) {
+@media only screen and (max-device-width: 1700px) {
   .c-houses {
-    width: 100vw;
-    height: 68vh;
+    top: 15vh;
+    &__container {
+      height: 68vh;
+    }
   }
 }
