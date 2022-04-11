@@ -8,7 +8,7 @@ const GalleryCharacters = ({ data }) => {
     <div className="c-characters-container">
       <div className="row">
         {data.map((character) => (
-          <div className="col-12 col-md-5 col-lg-2" key={character.id}>
+          <div className="col-12 col-md-3 col-lg-2" key={character.id}>
             <Link
               className="c-characters__link"
               to={generatePath("/characters/:name", { name: character.name })}
