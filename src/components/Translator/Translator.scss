@@ -1,32 +1,29 @@
-.c-translator-nav{
+.c-translator-nav {
+  position: absolute;
+  display: flex;
+  top: 2rem;
+  right: 10rem;
+  gap: 10px;
+}
+
+.c-flag-icon {
+  width: 80%;
+  height: 80%;
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 800px) {
+  .c-translator-nav {
     position: absolute;
     display: flex;
     top: 2rem;
-    right: 9rem;
+    right: 1rem;
     gap: 10px;
-}
-
-
-.c-flag-icon{
-    width: 80%;
-    height: 80%;
-    cursor: pointer;
-}
-
-
-@media only screen and (max-device-width: 800px) {
-    .c-translator-nav{
-        position: absolute;
-        display: flex;
-        top: 2rem;
-        right: 1rem;
-        gap: 10px;
-    }
-    
-    
-    .c-flag-icon{
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
   }
+
+  .c-flag-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}

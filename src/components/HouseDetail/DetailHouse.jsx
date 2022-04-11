@@ -10,7 +10,7 @@ const DetailHouse = ({ house }) => {
   const { t } = useTranslation(["translation"]);
 
   return (
-    <section className="c-detail">
+    <section className="c-detail1">
       <HomeButton />
       <Translator />
       {house.name && (
@@ -21,12 +21,10 @@ const DetailHouse = ({ house }) => {
               <p>{t("Go back")}</p>
             </div>
           </Link>
-          <img
-            className="c-house-detail__img"
-            src={house.logoURL}
-            alt={house.name}
-          />
-          <h2 className="c-house-detail__name">{house.name}</h2>
+          <div className="c-house-detail__top">
+            <img className="c-house-detail__img" src={house.logoURL} alt={house.name} />
+            <h2 className="c-house-detail__name">{house.name}</h2>
+          </div>
           <div className="c-house-detail__bottom">
             <div className="row">
               <div className="col-md-6 col-lg-2">
@@ -61,11 +59,7 @@ const DetailHouse = ({ house }) => {
               </div>
               <div className="col-md-6 col-lg-2">
                 <h3 className="c-house-detail__title">{t("Fundation")}</h3>
-                <p className="c-house-detail__text">
-                  {new Date(
-                    house.createdAt.substring(0, house.createdAt.indexOf("T"))
-                  ).toLocaleDateString("en-UK")}
-                </p>
+                <p className="c-house-detail__text">{new Date(house.createdAt.substring(0, house.createdAt.indexOf("T"))).toLocaleDateString("en-UK")}</p>
               </div>
             </div>
           </div>

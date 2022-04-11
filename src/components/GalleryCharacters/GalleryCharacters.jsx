@@ -2,29 +2,18 @@ import React from "react";
 import "./GalleryCharacters.scss";
 import { Link, generatePath } from "react-router-dom";
 
-const GalleryCharacters = ({ data }) => {
+const GalleryCharacters = ({ characters }) => {
   return (
     <section className="c-characters">
-    <div className="c-characters-container">
-      <div className="row">
-        {data.map((character) => (
-          <div className="col-12 col-md-3 col-lg-2" key={character.id}>
-            <Link
-              className="c-characters__link"
-              to={generatePath("/characters/:name", { name: character.name })}
-            >
-              <figure key={character.id} className="c-characters__figure">
-                <img
-                  className="c-characters__figure__img"
-                  src={character.image}
-                  alt={character.name}
-                />
-                <div className="c-characters__figure__name">{character.name}</div>
-              </figure>
+      <div className="c-characters__container">
+        {characters.map((character) => (
+          <figure className="c-characters-figure">
+            <Link className="c-characters__link" to={generatePath("/characters/:name", { name: character.name })}>
+              <img className="c-characters-figure__img" src={character.image} alt={character.name} />
+              <p className="c-characters-figure__name">{character.name}</p>
             </Link>
-          </div>
+          </figure>
         ))}
-      </div>
       </div>
     </section>
   );

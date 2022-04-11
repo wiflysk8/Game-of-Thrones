@@ -1,53 +1,51 @@
-.c-houses::-webkit-scrollbar{
-    width: 2px;
-    background-color: #443d3d;
-  }
-  
-  .c-houses::-webkit-scrollbar-thumb{
-    width: 2px;
-    height: 91.3px;
-    background-color: white;
-  }
+.c-houses__container::-webkit-scrollbar {
+  width: 2px;
+  background-color: #443d3d;
+}
 
+.c-houses__container::-webkit-scrollbar-thumb {
+  width: 2px;
+  height: 91.3px;
+  background-color: white;
+}
 
 .c-houses {
-  margin: 10vh 0px 0px 50px;
-  height: 75vh;
-  overflow-x: hidden;
-  &__container{
+  position: absolute;
+  flex-wrap: wrap;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  &__container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    //background-color: green;
-    margin-left: 5vw;
-    width: 90%;
+    max-width: 94%;
+    height: 74vh;
+    overflow-x: hidden;
   }
   &__link {
     text-decoration: none;
-    color: white;
-    font-family: "GOT";
-    font-size: 16px;
   }
   &-figure {
     width: 240px;
-    height: 330px;
-    margin: 10px 0px 10px 0px;
+    height: 275px;
+    margin: 30px 14px;
     &__img {
-      width: 95%;
-      height: 80%;
-    }
-    &__logo {
       width: 100%;
-      height: 90%;
+      height: 100%;
+      border-radius: 4px;
+    }
+    &__name {
+      color: var(--color-white);
+      text-align: center;
     }
   }
 }
 
-
 @media only screen and (max-device-width: 1000px) {
   .c-houses {
-    width: 80vw;    
+    width: 100vw;
     height: 68vh;
-
   }
 }

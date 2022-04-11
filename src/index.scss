@@ -1,23 +1,13 @@
-
-
 @font-face {
-  font-family: 'Got';
-  src: url('./assets/fonts/Game\ of\ Thrones.ttf');
+  font-family: "Got";
+  src: url("./assets/fonts/Game\ of\ Thrones.ttf");
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('./assets/fonts/Lato-Regular.ttf');
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Regular.ttf");
 }
 
-@import '~bootstrap/scss/bootstrap-grid';
+@import "./styles/color/color.settings";
 
-
-@import './styles/color/color.settings';
-
-@import './assets/fonts/style.scss'
-
-
-
-
-
+@import "./styles/elements/elements.figure";

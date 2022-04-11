@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   &__nav {
     position: absolute;
@@ -26,38 +25,19 @@
 }
 
 @media only screen and (max-device-width: 600px) {
-  .c-menu{
+  .c-menu {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    bottom: 1vh;
+    margin: 0px;
 
-    &__nav{
-      justify-content: space-evenly;
-    }
-    &__link{
-      font-size: 24px;
-      line-height: 40px;
-    }
-  }
-}
+    bottom: 8vh;
 
-@media only screen and (max-device-width: 1700px) {
-  .c-menu{
-    position: absolute;
-    width: 100%;
-    bottom: 1vh;
-    &__nav{
-      width: 80vw;
+    &__nav {
     }
-    
-
-  
-    &__link{
-      font-size: 24px;
+    &__link {
+      font-size: 14px;
     }
   }
 }

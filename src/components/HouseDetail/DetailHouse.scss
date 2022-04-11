@@ -1,69 +1,67 @@
-.c-detail{
-    display: flex;
-    justify-content: center;
-    height: 75vh;
-    width: 100vw;
-    margin-top: 4%;
-}
+.c-detail1 {
+  height: 75vh;
+  width: 98vw;
+  margin-top: 30vh;
 
-.c-house-detail{
+  .c-house-detail {
     margin: 8rem;
-    height: 16vh;   
-    
-    &__bottom{
-        width: 90vw;
-    }
-    
-    &__img{
-        width: 14rem;
-        height: 17rem;
-        
+    height: 16vh;
+
+    &__top {
+      position: relative;
+      bottom: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-    &__name{
-        font-size: 28px;
-        margin-bottom: 40px;
+    &__bottom {
+      position: relative;
+      bottom: 10vh;
+      text-align: center;
     }
 
-    &__logo{
-        margin: 20px 0px;
-        width:160px ;
-        height: 200px;        
+    &__img {
+      width: 14rem;
+      height: 17rem;
     }
 
-    &__text{        
-        font-family: 'Lato';
-     
-    }
-    &__goBack{
-        display: flex;
-        position: absolute;
-        font-family:Arial, Helvetica, sans-serif;
-        cursor: pointer;
-        font-size: 24px;
-        gap: 2vw;
-        top: 4vh;
-        left: 10vw;
+    &__name {
+      font-size: 25px;
+      margin-bottom: 40px;
     }
 
-    &__link{
-        
-        color: var(--white);
+    &__logo {
+      margin: 20px 0px;
+      width: 160px;
+      height: 200px;
     }
-    
+
+    &__text {
+      font-family: "Lato";
+    }
+    &__goBack {
+      display: flex;
+      position: absolute;
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      font-size: 24px;
+      gap: 2vw;
+      top: 3vh;
+      left: 10vw;
+    }
+
+    &__link {
+      color: var(--white);
+    }
+  }
 }
-
 
 @media only screen and (max-device-width: 1200px) {
-
-   
-
-    .c-house-detail__goBack{
-        font-size: 18px;
-        padding-bottom: 20px ;
-        &-arrow{
-            width: 24px;
-        }
-    }
-
+  .c-house-detail__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
