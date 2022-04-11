@@ -58,3 +58,12 @@
     }
   }
 }
+
+@media only screen and (max-device-width: 1800px) {
+  .c-characters {
+    margin-top: 2vh;
+    &__container {
+      height: 70vh;
+    }
+  }
+}
