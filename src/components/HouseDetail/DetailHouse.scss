@@ -9,7 +9,7 @@
 
     &__top {
       position: relative;
-      bottom: 12vh;
+      bottom: 14vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -17,7 +17,7 @@
 
     &__bottom {
       position: relative;
-      bottom: 10vh;
+      bottom: 12vh;
       text-align: center;
     }
 
@@ -27,8 +27,9 @@
     }
 
     &__name {
-      font-size: 25px;
+      font-size: 32px;
       margin-bottom: 40px;
+      font-weight: lighter;
     }
 
     &__logo {
