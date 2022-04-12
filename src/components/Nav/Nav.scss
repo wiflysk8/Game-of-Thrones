@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: black;
 
   &__nav {
     position: absolute;
@@ -11,6 +12,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 85vw;
+    background-color: var(--color-black);
   }
   &__link {
     font-family: "Got";
