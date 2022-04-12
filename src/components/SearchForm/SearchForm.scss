@@ -22,12 +22,17 @@
 
 @media only screen and (max-device-width: 1200px) {
   .c-search__form {
-    top: 3.5vh;
+    top: 4.2vh;
     left: 14vw;
     &__input {
       font-size: 14px;
       width: 32vw;
       border-bottom: 1px solid var(--color-white);
+    }
+    &__icon {
+      left: 26px;
+      width: 16px;
+      height: 14px;
     }
   }
 }
