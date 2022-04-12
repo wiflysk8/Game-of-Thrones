@@ -90,8 +90,9 @@
 
   &__img {
     width: 40%;
-    height: 50%;
+    height: 60%;
     border-radius: 50%;
+    object-fit: cover;
   }
 
   &__age {
@@ -117,6 +118,7 @@
     &__img {
       width: 68px;
       height: 68px;
+      object-fit: cover;
     }
   }
 
