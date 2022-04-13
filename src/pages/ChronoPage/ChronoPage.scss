@@ -68,11 +68,13 @@
   border-top: 2px solid var(--color-white);
   flex-direction: column;
   align-items: center;
+  text-align: center;
   &__img {
     width: 40%;
     height: 60%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
   }
 
   &__age {
@@ -88,12 +90,14 @@
   border-top: 2px solid var(--color-white);
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
   &__img {
     width: 40%;
     height: 60%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top;
   }
 
   &__age {
@@ -112,6 +116,7 @@
       width: 68px;
       height: 68px;
       object-fit: cover;
+      object-position: top;
     }
   }
 
@@ -123,6 +128,7 @@
       width: 68px;
       height: 68px;
       object-fit: cover;
+      object-position: top;
     }
   }
 
