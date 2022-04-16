@@ -11,15 +11,16 @@ const DetailCharacter = ({ character }) => {
   const [houses, setHouses] = useState([]);
   const { t } = useTranslation(["translation"]);
 
-  const getHouses = () => {
-    axios("https://api.got.show/api/show/houses/" + character.house).then((res) => {
-      if (res.data[0] !== undefined) {
-        setHouses(res.data[0]);
-      }
-    });
-  };
-
-  useEffect(() => getHouses());
+  useEffect(() => {
+    const getHouses = () => {
+      axios("https://api.got.show/api/show/houses/" + character.house).then((res) => {
+        if (res.data[0] !== undefined) {
+          setHouses(res.data[0]);
+        }
+      });
+    };
+    getHouses();
+  }, [character.house]);
 
   return (
     <section className="c-detail">
