@@ -7,7 +7,7 @@ const GalleryCharacters = ({ characters }) => {
     <section className="c-characters">
       <div className="c-characters__container">
         {characters.map((character) => (
-          <figure className="c-characters-figure">
+          <figure className="c-characters-figure" key={character.name}>
             <Link className="c-characters__link" to={generatePath("/characters/:name", { name: character.name })}>
               <img className="c-characters-figure__img" src={character.image} alt={character.name} />
               <p className="c-characters-figure__name">{character.name}</p>
